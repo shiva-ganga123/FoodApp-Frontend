@@ -18,7 +18,7 @@ const EditPage = () => {
   const getProduct = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get(`http://localhost:3000/api/products/${id}`);
+      const response = await axios.get(`https://node-api-io02.onrender.com/api/products/${id}`);
       setProduct({
         name: response.data.name,
         quantity: response.data.quantity,
