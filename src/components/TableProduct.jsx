@@ -20,8 +20,8 @@ const TableProduct = ({ products }) => {
             return (
               <tr key={index}>
                 <td className="p-4 border-b ">{product.name}</td>
-                <td className="p-4 border-b ">{product.quantity}</td>
                 <td className="p-4 border-b ">${product.price}</td>
+                <td className="p-4 border-b ">{product.quantity}</td>
                 <td className="p-4 border-b ">
                     <img src={product.image} className="w-full"/>
                 </td>
